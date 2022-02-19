@@ -1,0 +1,25 @@
+{
+    "name": "stoffelio/statamic-live-preview-tag",
+    "license": "MIT",
+    "type": "statamic-addon",
+    "description": "Adds Antlers tag to show or hide parts of templates in live preview mode.",
+    "autoload": {
+        "psr-4": {
+            "Stoffelio\\StatamicLivePreviewTag\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Live Preview Tag",
+            "description": "Adds Antlers tag to show or hide parts of templates in live preview mode."
+        },
+        "laravel": {
+            "providers": [
+                "Stoffelio\\StatamicLivePreviewTag\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "statamic/cms": "^3.0"
+    }
+}
